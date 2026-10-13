@@ -35,3 +35,4 @@ jobs:
           cmp dist/style.css style.css
           cmp dist/asset-manifest.json asset-manifest.json
           for asset in dist/assets/*; do cmp "$asset" "${asset#dist/}"; done
+          for icon in dist/icons/*; do cmp "$icon" "${icon#dist/}"; done
