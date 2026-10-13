@@ -2,7 +2,7 @@
 
 简体中文 · [English](README.md) · [GitHub 仓库](https://github.com/jup-asr-helper/jup-asr-helper.github.io) · [打开助手](https://jup-asr-helper.github.io/)
 
-开源的中英文领取助手：使用 **Binance Wallet 或 Phantom** 核对 Jupiter ASR 交易，并由用户授权签名。Binance 通过 Solana Wallet Standard 连接，Phantom 通过官方注入的 Solana provider 连接。可在支持的钱包手机 DApp 浏览器，或装有钱包扩展的电脑浏览器中打开。每位访问者连接自己的 Solana 账户。本项目是独立的社区工具，与 Binance、Phantom、Jupiter 均无隶属关系。
+开源领取助手：使用 **Binance Wallet 或 Phantom** 核对 Jupiter ASR 交易，并由用户授权签名。Binance 通过 Solana Wallet Standard 连接，Phantom 通过官方注入的 Solana provider 连接。可在支持的钱包手机 DApp 浏览器，或装有钱包扩展的电脑浏览器中打开。每位访问者连接自己的 Solana 账户。本项目是独立的社区工具，与 Binance、Phantom、Jupiter 均无隶属关系。
 
 GitHub Pages 网站地址：[jup-asr-helper.github.io](https://jup-asr-helper.github.io/)。手机端请在 Binance Wallet 或 Phantom 内打开该链接，以连接钱包。
 

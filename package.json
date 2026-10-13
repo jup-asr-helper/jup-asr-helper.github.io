@@ -17,7 +17,7 @@
   "devDependencies": {
     "esbuild": "0.25.10"
   },
-  "description": "Bilingual Binance Wallet and Phantom helper for Jupiter ASR claims",
+  "description": "Binance Wallet and Phantom helper for Jupiter ASR claims",
   "license": "MIT",
   "engines": {
     "node": ">=22"

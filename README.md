@@ -2,7 +2,7 @@
 
 [简体中文](README.zh-CN.md) · English · [GitHub repository](https://github.com/jup-asr-helper/jup-asr-helper.github.io) · [Open helper](https://jup-asr-helper.github.io/)
 
-An open-source, bilingual helper for reviewing a Jupiter ASR claim and requesting a signature with **Binance Wallet or Phantom**. Binance connects through Solana Wallet Standard; Phantom connects through its official injected Solana provider. Open the page in a supported mobile wallet's DApp browser or a desktop browser with its wallet extension. Each visitor connects their own Solana account. This is an independent community project, with no affiliation to Binance, Phantom, or Jupiter.
+An open-source helper for reviewing a Jupiter ASR claim and requesting a signature with **Binance Wallet or Phantom**. Binance connects through Solana Wallet Standard; Phantom connects through its official injected Solana provider. Open the page in a supported mobile wallet's DApp browser or a desktop browser with its wallet extension. Each visitor connects their own Solana account. This is an independent community project, with no affiliation to Binance, Phantom, or Jupiter.
 
 The GitHub Pages website is [jup-asr-helper.github.io](https://jup-asr-helper.github.io/). On a phone, open that URL inside Binance Wallet or Phantom to connect your wallet.
 
