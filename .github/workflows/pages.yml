@@ -33,3 +33,5 @@ jobs:
           cmp dist/index.html index.html
           cmp dist/app.js app.js
           cmp dist/style.css style.css
+          cmp dist/asset-manifest.json asset-manifest.json
+          for asset in dist/assets/*; do cmp "$asset" "${asset#dist/}"; done

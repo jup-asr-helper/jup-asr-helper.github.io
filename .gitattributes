@@ -1,2 +1,4 @@
 # Generated bundle contains intentional whitespace inside dependency strings.
 app.js -whitespace linguist-generated=true
+assets/*.js -whitespace linguist-generated=true
+assets/*.css linguist-generated=true
