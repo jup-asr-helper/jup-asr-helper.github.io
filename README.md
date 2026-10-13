@@ -1,6 +1,6 @@
 # JUP ASR Helper
 
-[简体中文](README.zh-CN.md) · English · [GitHub repository](https://github.com/jup-asr-helper/jup-asr-helper.github.io) · [Open helper](https://jup-asr-helper.github.io/)
+[简体中文](README.zh-CN.md) · English · [GitHub repository](https://github.com/jacklightChen/jup-asr-helper) · [Open helper](https://jup-asr-helper.github.io/)
 
 An open-source helper for reviewing a Jupiter ASR claim and requesting a signature with **Binance Wallet or Phantom**. Binance connects through Solana Wallet Standard; Phantom connects through its official injected Solana provider. Open the page in a supported mobile wallet's DApp browser or a desktop browser with its wallet extension. Each visitor connects their own Solana account. This is an independent community project, with no affiliation to Binance, Phantom, or Jupiter.
 
@@ -90,19 +90,11 @@ For a future ASR campaign, review the new metadata, contract/distributor address
 
 ## GitHub Pages
 
-The organization homepage repository is [`jup-asr-helper/jup-asr-helper.github.io`](https://github.com/jup-asr-helper/jup-asr-helper.github.io). Its existing publishing source is **Deploy from a branch → `main` → `/ (root)`**. That configuration is preserved. GitHub publishes the committed root assets whenever an administrator pushes to `main`; no custom domain or deployment secret is required. Other GitHub Pages sites are independent of this organization homepage.
+Source is maintained at [`jacklightChen/jup-asr-helper`](https://github.com/jacklightChen/jup-asr-helper). The website is published from [`jup-asr-helper/jup-asr-helper.github.io`](https://github.com/jup-asr-helper/jup-asr-helper.github.io), using its preserved **Deploy from a branch → `main` → `/ (root)`** configuration. No custom domain or deployment secret is required. Other GitHub Pages settings are unchanged.
 
-Before publishing a source change:
+Before releasing a change, run `npm test` and `npm run build`, then commit and push the source to `jacklightChen/jup-asr-helper`. Copy `dist/index.html`, `dist/app.js`, and `dist/style.css` to the root of a separate checkout of the organization homepage repository. Keep its `.nojekyll` file, commit the updated assets there, and push its `main` branch. `npm run build:pages` is also available to refresh the root assets in the deployment checkout.
 
-```sh
-npm test
-npm run build:pages
-git add src test build.mjs package.json package-lock.json index.html app.js style.css .nojekyll
-git commit -m "Update ASR helper"
-git push origin main
-```
-
-The included [verification workflow](.github/workflows/pages.yml) runs tests, rebuilds `dist`, and checks that the committed Pages assets exactly match the source. It does not modify Pages settings. GitHub's separate **pages build and deployment** run publishes the site at [https://jup-asr-helper.github.io/](https://jup-asr-helper.github.io/). See GitHub's [publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+The source [CI workflow](https://github.com/jacklightChen/jup-asr-helper/blob/main/.github/workflows/ci.yml) runs tests and builds. The deployment repository additionally checks that the committed Pages assets match its source snapshot. Neither check changes Pages settings. GitHub's **pages build and deployment** run publishes [https://jup-asr-helper.github.io/](https://jup-asr-helper.github.io/) when the organization's `main` branch is updated. See GitHub's [publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
 ## License
 

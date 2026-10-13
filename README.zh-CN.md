@@ -1,6 +1,6 @@
 # JUP ASR 签名助手
 
-简体中文 · [English](README.md) · [GitHub 仓库](https://github.com/jup-asr-helper/jup-asr-helper.github.io) · [打开助手](https://jup-asr-helper.github.io/)
+简体中文 · [English](README.md) · [GitHub 仓库](https://github.com/jacklightChen/jup-asr-helper) · [打开助手](https://jup-asr-helper.github.io/)
 
 开源领取助手：使用 **Binance Wallet 或 Phantom** 核对 Jupiter ASR 交易，并由用户授权签名。Binance 通过 Solana Wallet Standard 连接，Phantom 通过官方注入的 Solana provider 连接。可在支持的钱包手机 DApp 浏览器，或装有钱包扩展的电脑浏览器中打开。每位访问者连接自己的 Solana 账户。本项目是独立的社区工具，与 Binance、Phantom、Jupiter 均无隶属关系。
 
@@ -90,19 +90,11 @@ https://datapi.jup.ag/rewards/v1/campaigns/asr-2026-q3
 
 ## GitHub Pages
 
-组织主页仓库是 [`jup-asr-helper/jup-asr-helper.github.io`](https://github.com/jup-asr-helper/jup-asr-helper.github.io)。保留已启用的发布来源：**Deploy from a branch → `main` → `/ (root)`**。管理员推送 `main` 后，GitHub 自动发布已提交的根目录页面资源。无需自定义域名或部署密钥，其他 GitHub Pages 站点与这个组织主页相互独立。
+源码维护在 [`jacklightChen/jup-asr-helper`](https://github.com/jacklightChen/jup-asr-helper)。网站由 [`jup-asr-helper/jup-asr-helper.github.io`](https://github.com/jup-asr-helper/jup-asr-helper.github.io) 发布，保留其已启用的 **Deploy from a branch → `main` → `/ (root)`** 配置。无需自定义域名或部署密钥，其他 GitHub Pages 设置保持不变。
 
-修改源码后，按以下步骤发布：
+发布改动前，运行 `npm test` 和 `npm run build`，将源码提交并推送到个人仓库。随后在组织主页仓库的独立检出目录中，用 `dist/index.html`、`dist/app.js`、`dist/style.css` 更新根目录的对应文件，保留 `.nojekyll`，提交并推送组织仓库的 `main` 分支。也可以在部署目录中运行 `npm run build:pages`，更新根目录页面资源。
 
-```sh
-npm test
-npm run build:pages
-git add src test build.mjs package.json package-lock.json index.html app.js style.css .nojekyll
-git commit -m "Update ASR helper"
-git push origin main
-```
-
-附带的[检查工作流](.github/workflows/pages.yml)会运行测试、重新构建 `dist`，并确认已提交的页面资源与源码完全一致，不修改 Pages 设置。GitHub 独立的 **pages build and deployment** 工作流负责发布到 [https://jup-asr-helper.github.io/](https://jup-asr-helper.github.io/)。参见 [GitHub 发布来源官方文档](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)。
+源码的 [CI 工作流](https://github.com/jacklightChen/jup-asr-helper/blob/main/.github/workflows/ci.yml)会测试并构建。部署仓库还会检查已提交的页面资源与源码快照一致，这些检查均不修改 Pages 设置。组织仓库的 `main` 更新后，GitHub 的 **pages build and deployment** 工作流发布到 [https://jup-asr-helper.github.io/](https://jup-asr-helper.github.io/)。参见 [GitHub 发布来源官方文档](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)。
 
 ## 许可证
 
